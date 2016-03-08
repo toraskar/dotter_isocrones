@@ -1,2 +1,51 @@
  I am at Columbia.
 I am editing the file.
+Changing the branch from master branch
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[toraskar@Jayashree dotter_isocrones]$git diff README
+diff --git a/README b/README
+index 6716210..1251188 100644
+--- a/README
++++ b/README
+@@ -1 +1,2 @@
+  I am at Columbia.
++I am editing the file.
+[toraskar@Jayashree dotter_isocrones]$git add README
+[toraskar@Jayashree dotter_isocrones]$git commit -m "I added 2nd line"
+[master 9691528] I added 2nd line
+ Committer: toraskar <toraskar@Jayashree.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+[toraskar@Jayashree dotter_isocrones]$git status
+On branch master
+nothing to commit, working directory clean
+[toraskar@Jayashree dotter_isocrones]$git diff README
+[toraskar@Jayashree dotter_isocrones]$git status
+On branch master
+nothing to commit, working directory clean
+[toraskar@Jayashree dotter_isocrones]$git branch
+* master
+[toraskar@Jayashree dotter_isocrones]$git branch fix_a_bug
+[toraskar@Jayashree dotter_isocrones]$git checkout fix_a_bug
+Switched to branch 'fix_a_bug'
+[toraskar@Jayashree dotter_isocrones]$git status
+On branch fix_a_bug
+nothing to commit, working directory clean
+
